@@ -50,6 +50,18 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/Select",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/ActivateMenu",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/MenuSelectionPosition",
+      "type": "vector2"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
