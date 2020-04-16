@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><contributor><author></author><authoring_tool>FBX COLLADA exporter</authoring_tool><comments></comments></contributor><created>2014-05-22T09:34:18Z</created><keywords></keywords><modified>2014-05-22T09:34:18Z</modified><revision></revision><subject></subject><title></title><unit meter="0.025400" name="centimeter"></unit><up_axis>Y_UP</up_axis></asset>
+  <library_images>
+    <image id="ID9-image" name="ID9"><init_from>file://F:\cs-editor\Assets\Resources\Objects\Traces\arterial_bleeding\arterial_bleeding\__auto_.png</init_from></image>
+  </library_images>
+  <library_materials>
+    <material id="__auto_" name="__auto_">
+      <instance_effect url="#__auto_-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="__auto_-fx" name="__auto_">
+      <profile_COMMON>
+        <technique sid="standard">
+          <phong>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.200000  0.200000 0.200000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="ID9-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.000000  0.000000 0.000000 1.000000</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">1.071773</float>
+            </shininess>
+            <reflective>
+              <color sid="reflective">0.000000  0.000000 0.000000 1.000000</color>
+            </reflective>
+            <reflectivity>
+              <float sid="reflectivity">1.000000</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <texture texture="ID9-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>ADD</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </transparent>
+            <transparency>
+              <float sid="transparency">0.000000</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Component-lib" name="ComponentMesh">
+      <mesh>
+        <source id="Component-POSITION">
+          <float_array id="Component-POSITION-array" count="24">
+117.530403 0.617700 0.000000
+-0.579812 118.727997 0.000000
+-0.579812 0.617700 0.000000
+117.530403 118.727997 0.000000
+117.530403 118.727997 0.000000
+117.530403 0.617700 0.000000
+-0.579812 118.727997 0.000000
+-0.579812 0.617700 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Component-POSITION-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component-Normal0">
+          <float_array id="Component-Normal0-array" count="36">
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+0.000000 0.000000 -1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Component-Normal0-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component-UV0">
+          <float_array id="Component-UV0-array" count="8">
+1.000000 -0.000000
+-0.000000 1.000000
+-0.000000 -0.000000
+1.000000 1.000000
+</float_array>
+          <technique_common>
+            <accessor source="#Component-UV0-array" count="4" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Component-VERTEX">
+          <input semantic="POSITION" source="#Component-POSITION"/>
+        </vertices>
+        <triangles count="4" material="__auto_"><input semantic="VERTEX" offset="0" source="#Component-VERTEX"/><input semantic="NORMAL" offset="1" source="#Component-Normal0"/><input semantic="TEXCOORD" offset="2" set="0" source="#Component-UV0"/><p> 0 0 0 1 1 1 2 2 2 1 3 1 0 4 0 3 5 3 4 6 3 5 7 0 6 8 1 7 9 2 6 10 1 5 11 0</p></triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_animations>
+    <animation id="SketchUp-anim" name="SketchUp"><animation><source id="SketchUp-Matrix-animation-input"><float_array id="SketchUp-Matrix-animation-input-array" count="0">
+</float_array><technique_common><accessor source="#SketchUp-Matrix-animation-input-array" count="0"><param name="TIME" type="float"/></accessor></technique_common></source><source id="SketchUp-Matrix-animation-output-transform"><float_array id="SketchUp-Matrix-animation-output-transform-array" count="0">
+</float_array><technique_common><accessor source="#SketchUp-Matrix-animation-output-transform-array" count="0" stride="16"><param type="float4x4"/></accessor></technique_common></source><source id="SketchUp-Interpolations"><Name_array id="SketchUp-Interpolations-array" count="0">
+</Name_array><technique_common><accessor source="#SketchUp-Interpolations-array" count="0"><param type="name"/></accessor></technique_common></source><sampler id="SketchUp-Matrix-animation-transform"><input semantic="INPUT" source="#SketchUp-Matrix-animation-input"/><input semantic="OUTPUT" source="#SketchUp-Matrix-animation-output-transform"/><input semantic="INTERPOLATION" source="#SketchUp-Interpolations"/></sampler><channel source="#SketchUp-Matrix-animation-transform" target="SketchUp/matrix"/></animation></animation>
+    <animation id="instance_0-anim" name="instance_0"><animation><source id="instance_0-Matrix-animation-input"><float_array id="instance_0-Matrix-animation-input-array" count="0">
+</float_array><technique_common><accessor source="#instance_0-Matrix-animation-input-array" count="0"><param name="TIME" type="float"/></accessor></technique_common></source><source id="instance_0-Matrix-animation-output-transform"><float_array id="instance_0-Matrix-animation-output-transform-array" count="0">
+</float_array><technique_common><accessor source="#instance_0-Matrix-animation-output-transform-array" count="0" stride="16"><param type="float4x4"/></accessor></technique_common></source><source id="instance_0-Interpolations"><Name_array id="instance_0-Interpolations-array" count="0">
+</Name_array><technique_common><accessor source="#instance_0-Interpolations-array" count="0"><param type="name"/></accessor></technique_common></source><sampler id="instance_0-Matrix-animation-transform"><input semantic="INPUT" source="#instance_0-Matrix-animation-input"/><input semantic="OUTPUT" source="#instance_0-Matrix-animation-output-transform"/><input semantic="INTERPOLATION" source="#instance_0-Interpolations"/></sampler><channel source="#instance_0-Matrix-animation-transform" target="instance_0/matrix"/></animation></animation>
+    <animation id="skp844F-anim" name="skp844F"><animation><source id="skp844F-Matrix-animation-input"><float_array id="skp844F-Matrix-animation-input-array" count="0">
+</float_array><technique_common><accessor source="#skp844F-Matrix-animation-input-array" count="0"><param name="TIME" type="float"/></accessor></technique_common></source><source id="skp844F-Matrix-animation-output-transform"><float_array id="skp844F-Matrix-animation-output-transform-array" count="0">
+</float_array><technique_common><accessor source="#skp844F-Matrix-animation-output-transform-array" count="0" stride="16"><param type="float4x4"/></accessor></technique_common></source><source id="skp844F-Interpolations"><Name_array id="skp844F-Interpolations-array" count="0">
+</Name_array><technique_common><accessor source="#skp844F-Interpolations-array" count="0"><param type="name"/></accessor></technique_common></source><sampler id="skp844F-Matrix-animation-transform"><input semantic="INPUT" source="#skp844F-Matrix-animation-input"/><input semantic="OUTPUT" source="#skp844F-Matrix-animation-output-transform"/><input semantic="INTERPOLATION" source="#skp844F-Interpolations"/></sampler><channel source="#skp844F-Matrix-animation-transform" target="skp844F/matrix"/></animation></animation>
+    <animation id="instance_1-anim" name="instance_1"><animation><source id="instance_1-Matrix-animation-input"><float_array id="instance_1-Matrix-animation-input-array" count="0">
+</float_array><technique_common><accessor source="#instance_1-Matrix-animation-input-array" count="0"><param name="TIME" type="float"/></accessor></technique_common></source><source id="instance_1-Matrix-animation-output-transform"><float_array id="instance_1-Matrix-animation-output-transform-array" count="0">
+</float_array><technique_common><accessor source="#instance_1-Matrix-animation-output-transform-array" count="0" stride="16"><param type="float4x4"/></accessor></technique_common></source><source id="instance_1-Interpolations"><Name_array id="instance_1-Interpolations-array" count="0">
+</Name_array><technique_common><accessor source="#instance_1-Interpolations-array" count="0"><param type="name"/></accessor></technique_common></source><sampler id="instance_1-Matrix-animation-transform"><input semantic="INPUT" source="#instance_1-Matrix-animation-input"/><input semantic="OUTPUT" source="#instance_1-Matrix-animation-output-transform"/><input semantic="INTERPOLATION" source="#instance_1-Interpolations"/></sampler><channel source="#instance_1-Matrix-animation-transform" target="instance_1/matrix"/></animation></animation>
+    <animation id="Component-anim" name="Component"><animation><source id="Component-Matrix-animation-input"><float_array id="Component-Matrix-animation-input-array" count="0">
+</float_array><technique_common><accessor source="#Component-Matrix-animation-input-array" count="0"><param name="TIME" type="float"/></accessor></technique_common></source><source id="Component-Matrix-animation-output-transform"><float_array id="Component-Matrix-animation-output-transform-array" count="0">
+</float_array><technique_common><accessor source="#Component-Matrix-animation-output-transform-array" count="0" stride="16"><param type="float4x4"/></accessor></technique_common></source><source id="Component-Interpolations"><Name_array id="Component-Interpolations-array" count="0">
+</Name_array><technique_common><accessor source="#Component-Interpolations-array" count="0"><param type="name"/></accessor></technique_common></source><sampler id="Component-Matrix-animation-transform"><input semantic="INPUT" source="#Component-Matrix-animation-input"/><input semantic="OUTPUT" source="#Component-Matrix-animation-output-transform"/><input semantic="INTERPOLATION" source="#Component-Interpolations"/></sampler><channel source="#Component-Matrix-animation-transform" target="Component/matrix"/></animation></animation>
+  </library_animations>
+  <library_visual_scenes>
+    <visual_scene id="arterial_bleeding" name="arterial_bleeding">
+      <node name="SketchUp" id="SketchUp" sid="SketchUp"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="instance_0" id="instance_0" sid="instance_0"><matrix sid="matrix">0.000000 0.000000 -1.000000 -0.000000 -1.000000 -0.000000 -0.000000 117.530403 -0.000000 1.000000 0.000000 -0.617700 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="skp844F" id="skp844F" sid="skp844F"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="instance_1" id="instance_1" sid="instance_1"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra><node name="Component" id="Component" sid="Component"><matrix sid="matrix">1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix><instance_geometry url="#Component-lib"><bind_material><technique_common><instance_material symbol="__auto_" target="#__auto_"/></technique_common></bind_material></instance_geometry><extra><technique profile="FCOLLADA"><visibility>1.000000</visibility></technique></extra></node></node></node></node></node>
+      <extra><technique profile="MAX3D"><frame_rate>30.000000</frame_rate></technique><technique profile="FCOLLADA"><start_time>0.000000</start_time><end_time>3.333333</end_time></technique></extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#arterial_bleeding"></instance_visual_scene>
+  </scene>
+</COLLADA>
