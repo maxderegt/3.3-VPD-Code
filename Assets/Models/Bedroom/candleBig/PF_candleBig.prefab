@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3426782497721524420}
   - component: {fileID: 4600368606288959454}
   - component: {fileID: 410536514296921632}
+  - component: {fileID: 1516414162342164831}
   m_Layer: 0
   m_Name: PF_candleBig
   m_TagString: Untagged
@@ -99,6 +100,19 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!65 &1516414162342164831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3426782497721040100}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00085556833, y: 0.0031648367, z: 0.0008238165}
+  m_Center: {x: 0.000013859197, y: 0.0014295229, z: 0.00003303919}
 --- !u!1 &3426782497721040102
 GameObject:
   m_ObjectHideFlags: 0
