@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8784537651901182048}
   - component: {fileID: 5417307048922746857}
   - component: {fileID: 3172676778544183144}
+  - component: {fileID: 8880295863862482294}
   m_Layer: 0
   m_Name: PF_candleSmall
   m_TagString: Untagged
@@ -113,9 +114,22 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.00038716794
-  m_Height: 0.0024174945
+  m_Height: 0.0021880462
   m_Direction: 1
-  m_Center: {x: -0.0000026907771, y: 0.0009328851, z: 0}
+  m_Center: {x: -0.0000026907771, y: 0.0010476087, z: 0}
+--- !u!65 &8880295863862482294
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8716832114807363845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0004896942, y: 0.0021669047, z: 0.00055192655}
+  m_Center: {x: -0.0000012445078, y: 0.0010489038, z: 0.000002489239}
 --- !u!1 &8716832114807363847
 GameObject:
   m_ObjectHideFlags: 0
