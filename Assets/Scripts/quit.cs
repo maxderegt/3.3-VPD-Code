@@ -1,15 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ButtonGrid : MonoBehaviour
+public class quit : MonoBehaviour
 {
-    public void addButton()
-    {
-
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +13,10 @@ public class ButtonGrid : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey("escape"))
+        {
+            Debug.Log("quit game");
+            Application.Quit();
+        }
     }
 }
