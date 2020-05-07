@@ -25,7 +25,7 @@ public class ResearchChecker : MonoBehaviour
         var gameobjects = Resources.FindObjectsOfTypeAll<ResearchManager>();
         foreach (ResearchManager item in gameobjects)
         {
-            results.Add(new Results(item.StepsRequired, item.StepsTaken);
+            results.Add(new Results(item.StepsRequired, item.StepsTaken));
         }
 
         return results;
