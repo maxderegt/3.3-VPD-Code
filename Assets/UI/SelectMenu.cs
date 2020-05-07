@@ -37,7 +37,7 @@ public class SelectMenu : MonoBehaviour
             Text text = button.transform.GetChild(0).GetComponent(typeof(Text)) as Text;
             text.text = allScenes[i];
             Button b = button.GetComponent<Button>();
-            b.image.sprite = loadImage(new Vector2(1165, 450), "screenshot/" + allScenes[i] + ".png");
+            b.image.sprite = loadImage(new Vector2(1920, 1080), "screenshot/" + allScenes[i] + ".png");
             b.onClick.AddListener(delegate ()
             {
                 Text name = b.transform.GetChild(0).GetComponent(typeof(Text)) as Text;
