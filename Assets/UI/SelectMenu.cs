@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -31,10 +32,12 @@ public class SelectMenu : MonoBehaviour
             if (allScenes[i] == "Main menu")
                 continue;
 
+
             GameObject button = Instantiate(pfbutton);
             Text text = button.transform.GetChild(0).GetComponent(typeof(Text)) as Text;
             text.text = allScenes[i];
             Button b = button.GetComponent<Button>();
+            b.image.sprite = loadImage(new Vector2(1165, 450), "screenshot/" + allScenes[i] + ".png");
             b.onClick.AddListener(delegate ()
             {
                 Text name = b.transform.GetChild(0).GetComponent(typeof(Text)) as Text;
@@ -47,14 +50,15 @@ public class SelectMenu : MonoBehaviour
 
     }
 
-    public void Select(string levelName)
+    private static Sprite loadImage(Vector2 size, string filePath)
     {
 
-    }
+        byte[] bytes = File.ReadAllBytes(filePath);
+        Texture2D texture = new Texture2D((int)size.x, (int)size.y, TextureFormat.RGB24, false);
+        texture.filterMode = FilterMode.Trilinear;
+        texture.LoadImage(bytes);
+        Sprite sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f));
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        return sprite;
     }
 }
