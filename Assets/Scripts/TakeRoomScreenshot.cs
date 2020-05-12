@@ -59,7 +59,7 @@ public class TakeRoomScreenshot : MonoBehaviour
     {
         if (!Directory.Exists(path))
             Directory.CreateDirectory(path);
-        byte[] _bytes = _texture.EncodeToPNG();
+        byte[] _bytes = _texture.EncodeToJPG();
         File.WriteAllBytes(_fullPath, _bytes);
     }
 }

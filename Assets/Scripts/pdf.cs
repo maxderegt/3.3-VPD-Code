@@ -12,6 +12,9 @@ public class pdf : MonoBehaviour
     string sceneName;
     string date;
     string docname;
+
+
+    private string ScreenshotPath = "Screenshot";
     // Start is called before the first frame update
     void Start()
     {
@@ -34,9 +37,16 @@ public class pdf : MonoBehaviour
         docname = sceneName + "-" + date;
         pdfDocument pdfDocument = new pdfDocument(docname, "TI-2020");
         Titlepage(pdfDocument);
-        InsertImage("", pdfDocument);
         addResults(pdfDocument);
-        pdfDocument.createPDF(@"" + docname + ".pdf");
+
+        DirectoryInfo d = new DirectoryInfo(ScreenshotPath);
+        foreach (var file in d.GetFiles())
+        {
+            InsertImage(ScreenshotPath + "/" + file.Name, pdfDocument);
+        }
+        if (!Directory.Exists("pdf"))
+            Directory.CreateDirectory("pdf");
+        pdfDocument.createPDF(@"pdf/" + docname + ".pdf");
     }
 
     private void Titlepage(pdfDocument doc)
@@ -51,7 +61,7 @@ public class pdf : MonoBehaviour
     private void InsertImage(string imagePath, pdfDocument doc)
     {
         pdfPage page = doc.addPage(1080, 1920);
-        byte[] vs = File.ReadAllBytes("Screenshot VPD - 1-26-35.jpg");
+        byte[] vs = File.ReadAllBytes(imagePath);
         int IWidht = page.width;
         int IHeight = IWidht * 9 / 16;
 
@@ -63,7 +73,7 @@ public class pdf : MonoBehaviour
     private void InsertImage(string imagePath, pdfDocument doc, int pageWidth, int pageHeight)
     {
         pdfPage page = doc.addPage(pageHeight, pageWidth);
-        byte[] vs = File.ReadAllBytes("Screenshot VPD - 1-26-35.jpg");
+        byte[] vs = File.ReadAllBytes(imagePath);
         int IWidht = page.width;
         int IHeight = IWidht * 9 / 16;
 
@@ -114,7 +124,7 @@ public class pdf : MonoBehaviour
                     table.addRow(row);
                 }
             else
-                for (int i = 0; i < result.StepsRequired.Count; i++)
+                for (int i = 0; i < result.StepsTaken.Count; i++)
                 {
                     pdfTableRow row = table.createRow();
                     try
