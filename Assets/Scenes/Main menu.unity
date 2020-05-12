@@ -2406,7 +2406,6 @@ GameObject:
   - component: {fileID: 607604779}
   - component: {fileID: 607604781}
   - component: {fileID: 607604780}
-  - component: {fileID: 607604782}
   m_Layer: 5
   m_Name: ContentGrid
   m_TagString: Untagged
@@ -2471,18 +2470,6 @@ MonoBehaviour:
   m_Spacing: {x: 10, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!114 &607604782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607604778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cec9b33a52e013848aae92d3020d7967, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &607960300
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -37,14 +37,22 @@ public class SelectMenu : MonoBehaviour
             Text text = button.transform.GetChild(0).GetComponent(typeof(Text)) as Text;
             text.text = allScenes[i];
             Button b = button.GetComponent<Button>();
-            b.image.sprite = loadImage(new Vector2(1920, 1080), "Assets/Scenes/images" + allScenes[i] + ".png");
+            try
+            {
+                b.image.sprite = loadImage(new Vector2(1920, 1080), "Assets/Scenes/images/" + allScenes[i] + ".png");
+            }
+            catch (System.Exception)
+            {
+                Debug.Log("Error generating scene select menu: " + allScenes[i] + " doesn't have preview image");
+            }
+            
             b.onClick.AddListener(delegate ()
             {
                 Text name = b.transform.GetChild(0).GetComponent(typeof(Text)) as Text;
                 SceneManager.LoadScene(name.text);
                 audioSource.PlayOneShot(clip, volume);
             });
-            button.transform.parent = contentgrid.transform;
+            button.transform.SetParent(contentgrid.transform,false);
             sceneButtons.Add(b);
         }
 
