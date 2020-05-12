@@ -40,7 +40,7 @@ public class TakeScreenshot : MonoBehaviour
             image.ReadPixels(new Rect(0, 0, 1920, 1080), 0, 0);
             image.Apply();
 
-            SaveTextureAsPNG(image, "Screenshot VPD - " + DateTime.Now.ToString("h-mm-ss") + ".png");
+            SaveTextureAsJPG(image, "Screenshot VPD - " + DateTime.Now.ToString("h-mm-ss") + ".jpg");
 
             Debug.Log("Screenshot taken");
 
@@ -61,9 +61,9 @@ public class TakeScreenshot : MonoBehaviour
     }
 
 
-    public static void SaveTextureAsPNG(Texture2D _texture, string _fullPath)
+    public static void SaveTextureAsJPG(Texture2D _texture, string _fullPath)
     {
-        byte[] _bytes = _texture.EncodeToPNG();
+        byte[] _bytes = _texture.EncodeToJPG();
         System.IO.File.WriteAllBytes(_fullPath, _bytes);
     }
 }
