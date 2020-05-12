@@ -5,6 +5,7 @@ using UnityEngine;
 public class ResearchChecker : MonoBehaviour
 {
     public pdf pdf;
+    public TakeRoomScreenshot roomScreenshot;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,8 @@ public class ResearchChecker : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            List<Results> results = CheckAllResearch();
+            roomScreenshot.TakeScreenshot(true);
+            pdf.createPdf(CheckAllResearch());
         }
     }
 
@@ -28,9 +30,6 @@ public class ResearchChecker : MonoBehaviour
         {
             results.Add(new Results(item.transform.name, item.StepsRequired, item.StepsTaken));
         }
-
-        pdf.createPdf(results);
-
         return results;
     }
 }

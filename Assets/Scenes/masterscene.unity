@@ -1385,7 +1385,7 @@ PrefabInstance:
         type: 3}
       propertyPath: takeRoomScreenshot
       value: 
-      objectReference: {fileID: 2086333220}
+      objectReference: {fileID: 915351586}
     - target: {fileID: 9180067146957325540, guid: ddbdc25eb8cd2944d96fe80594fde009,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2665,37 +2665,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fde8c85314456444ebf8a3e52c74c818, type: 3}
---- !u!1 &915351583 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8409302352991281852, guid: 3352468a1d732c14b8c3c13de53330cd,
+--- !u!114 &915351586 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 915351586, guid: 3352468a1d732c14b8c3c13de53330cd,
     type: 3}
   m_PrefabInstance: {fileID: 1376528979}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &915351584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915351583}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af721d7cb9dcf0d43ba35529694f5460, type: 3}
+  m_Script: {fileID: 11500000, guid: aaae0cc55c915514d9b8dbe382b7bc3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &915351585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 915351583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 555fe2295759bd745831c27e01f540fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pdf: {fileID: 915351584}
 --- !u!1 &963746619
 GameObject:
   m_ObjectHideFlags: 0
@@ -4070,6 +4051,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 915351586, guid: 3352468a1d732c14b8c3c13de53330cd, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 2086333221}
+    - target: {fileID: 915351586, guid: 3352468a1d732c14b8c3c13de53330cd, type: 3}
+      propertyPath: trackPlayerMovement
+      value: 
+      objectReference: {fileID: 1988410655}
+    - target: {fileID: 915351586, guid: 3352468a1d732c14b8c3c13de53330cd, type: 3}
+      propertyPath: light
+      value: 
+      objectReference: {fileID: 2086333219}
+    - target: {fileID: 915351586, guid: 3352468a1d732c14b8c3c13de53330cd, type: 3}
+      propertyPath: roomlight
+      value: 
+      objectReference: {fileID: 300131219}
     - target: {fileID: 8409302352991281852, guid: 3352468a1d732c14b8c3c13de53330cd,
         type: 3}
       propertyPath: m_Name
@@ -5318,7 +5315,7 @@ PrefabInstance:
         type: 3}
       propertyPath: takeRoomScreenshot
       value: 
-      objectReference: {fileID: 2086333220}
+      objectReference: {fileID: 915351586}
     - target: {fileID: 4915568440812720714, guid: a5f6984d9a4bf1f429c36c443913ea8b,
         type: 3}
       propertyPath: m_Name
@@ -5410,7 +5407,6 @@ GameObject:
   - component: {fileID: 2086333218}
   - component: {fileID: 2086333219}
   - component: {fileID: 2086333221}
-  - component: {fileID: 2086333220}
   m_Layer: 0
   m_Name: Direction Light
   m_TagString: Untagged
@@ -5470,22 +5466,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &2086333220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2086333217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaae0cc55c915514d9b8dbe382b7bc3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 2086333221}
-  trackPlayerMovement: {fileID: 1988410655}
-  light: {fileID: 2086333219}
-  roomlight: {fileID: 300131219}
 --- !u!20 &2086333221
 Camera:
   m_ObjectHideFlags: 0
