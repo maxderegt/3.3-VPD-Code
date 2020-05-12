@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class TakeRoomScreenshot : MonoBehaviour
@@ -10,6 +11,7 @@ public class TakeRoomScreenshot : MonoBehaviour
     public Light light;
     public Light roomlight;
 
+    private string path = "Screenshot";
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +46,7 @@ public class TakeRoomScreenshot : MonoBehaviour
         image.ReadPixels(new Rect(0, 0, 1920, 1080), 0, 0);
         image.Apply();
 
-        SaveTextureAsJPG(image, "RoomScreenshot VPD - " + DateTime.Now.ToString("h-mm-ss") + ".jpg");
+        SaveTextureAsJPG(image, path + "/RoomScreenshot VPD - " + DateTime.Now.ToString("h-mm-ss.fff") + ".jpg");
 
         Debug.Log("Screenshot taken");
 
@@ -53,9 +55,11 @@ public class TakeRoomScreenshot : MonoBehaviour
         roomlight.enabled = true;
     }
 
-    private static void SaveTextureAsJPG(Texture2D _texture, string _fullPath)
+    public void SaveTextureAsJPG(Texture2D _texture, string _fullPath)
     {
-        byte[] _bytes = _texture.EncodeToJPG();
-        System.IO.File.WriteAllBytes(_fullPath, _bytes);
+        if (!Directory.Exists(path))
+            Directory.CreateDirectory(path);
+        byte[] _bytes = _texture.EncodeToPNG();
+        File.WriteAllBytes(_fullPath, _bytes);
     }
 }
