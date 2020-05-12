@@ -18,11 +18,6 @@ public class TrackPlayerMovement : MonoBehaviour
     void Update()
     {
         playerPos.Add(transform.position);
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            drawPlayerMovement();
-        }
     }
 
     public void drawPlayerMovement()
@@ -32,8 +27,8 @@ public class TrackPlayerMovement : MonoBehaviour
         lineRenderer.material = trail;
         lineRenderer.startWidth = 0.03F;
         lineRenderer.endWidth = 0.03F;
-        lineRenderer.receiveShadows = false;
-        lineRenderer.allowOcclusionWhenDynamic = false;
+        //lineRenderer.receiveShadows = false;
+        //lineRenderer.allowOcclusionWhenDynamic = false;
 
         //Change how mant points based on the mount of positions is the List
         lineRenderer.positionCount = playerPos.Count-1;
