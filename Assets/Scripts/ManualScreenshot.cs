@@ -20,7 +20,7 @@ public class ManualScreenshot : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
-            ScreenCapture.CaptureScreenshot("Assets/screenshot/"+sceneName + ".png");
+            ScreenCapture.CaptureScreenshot("Assets/Scenes/images/" + sceneName + ".png");
 
 
             Debug.Log("screenshot");

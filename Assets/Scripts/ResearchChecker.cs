@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ResearchChecker : MonoBehaviour
 {
+    public pdf pdf;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +26,10 @@ public class ResearchChecker : MonoBehaviour
         var gameobjects = Resources.FindObjectsOfTypeAll<ResearchManager>();
         foreach (ResearchManager item in gameobjects)
         {
-            results.Add(new Results(item.StepsRequired, item.StepsTaken));
+            results.Add(new Results(item.transform.name, item.StepsRequired, item.StepsTaken));
         }
+
+        pdf.createPdf(results);
 
         return results;
     }
