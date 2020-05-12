@@ -2,13 +2,16 @@
 
 public class Results
 {
+    public string Name;
     public List<string> StepsRequired = new List<string>();
     public List<string> StepsTaken = new List<string>();
     public List<string> ExtraSteps = new List<string>();
     public bool AllRequiredSteps;
 
-    public Results(List<ResearchMethods> stepsRequired, List<ResearchMethods> stepsTaken)
+    public Results(string name, List<ResearchMethods> stepsRequired, List<ResearchMethods> stepsTaken)
     {
+        Name = name;
+
         foreach (ResearchMethods item in stepsRequired)
         {
             StepsRequired.Add(item.ToString());
