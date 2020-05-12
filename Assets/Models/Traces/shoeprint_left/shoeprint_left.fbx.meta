@@ -9,7 +9,12 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: shoeprint_left
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shoeprint_shdr
+    second: {fileID: 2100000, guid: f01d97ddb2a25c94aa1d0e1bfb64ba4b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
