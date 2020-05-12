@@ -10,7 +10,9 @@ public class TakeScreenshot : MonoBehaviour
     public AudioClip clip;
     public float volume = 0.5f;
     public Camera camera;
-
+    public TakeRoomScreenshot takeRoomScreenshot;
+    public GameObject simpelcamera;
+    public GameObject realisticcamera;
 
     // Start is called before the first frame update
     void Start()
@@ -41,8 +43,21 @@ public class TakeScreenshot : MonoBehaviour
             SaveTextureAsJPG(image, "Screenshot VPD - " + DateTime.Now.ToString("h-mm-ss") + ".jpg");
 
             Debug.Log("Screenshot taken");
+
+            TakeRoomScreenshot();
             
         }
+    }
+
+    private void TakeRoomScreenshot()
+    {
+        simpelcamera.SetActive(true);
+        realisticcamera.SetActive(false);
+
+        takeRoomScreenshot.TakeScreenshot(false);
+
+        simpelcamera.SetActive(false);
+        realisticcamera.SetActive(true);
     }
 
 

@@ -1043,7 +1043,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1194971112}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &306553169
 PrefabInstance:
@@ -1361,6 +1361,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 836626576}
     m_Modifications:
+    - target: {fileID: 5740609129416893069, guid: ddbdc25eb8cd2944d96fe80594fde009,
+        type: 3}
+      propertyPath: takeRoomScreenshot
+      value: 
+      objectReference: {fileID: 2086333220}
     - target: {fileID: 9180067146957325540, guid: ddbdc25eb8cd2944d96fe80594fde009,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3171,6 +3176,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: main room light
       objectReference: {fileID: 0}
+    - target: {fileID: 5939468822099384034, guid: 05bb1d90d3ff0c34ba6bae7274c7706a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5939468822099384035, guid: 05bb1d90d3ff0c34ba6bae7274c7706a,
         type: 3}
       propertyPath: m_Type
@@ -3445,6 +3455,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963746621}
+  - {fileID: 2086333218}
   - {fileID: 300131220}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -5021,6 +5032,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 754730883}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1988410655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988410654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a5aa6530f921442a6aed120cc5c5bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trail: {fileID: 2100000, guid: 3783857b41626b4489f830b14ed3c55d, type: 2}
 --- !u!114 &1988410658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5130,15 +5154,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 836626576}
     m_Modifications:
+    - target: {fileID: 4915568440010401773, guid: a5f6984d9a4bf1f429c36c443913ea8b,
+        type: 3}
+      propertyPath: takeRoomScreenshot
+      value: 
+      objectReference: {fileID: 2086333220}
     - target: {fileID: 4915568440812720714, guid: a5f6984d9a4bf1f429c36c443913ea8b,
         type: 3}
       propertyPath: m_Name
       value: Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 4915568440812720714, guid: a5f6984d9a4bf1f429c36c443913ea8b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4915568440812817962, guid: a5f6984d9a4bf1f429c36c443913ea8b,
         type: 3}
@@ -5215,6 +5239,135 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1597923179}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2086333217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2086333218}
+  - component: {fileID: 2086333219}
+  - component: {fileID: 2086333221}
+  - component: {fileID: 2086333220}
+  m_Layer: 0
+  m_Name: Direction Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2086333218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086333217}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -56.037876, y: 28.02204, z: 8.949375}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1194971112}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &2086333219
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086333217}
+  m_Enabled: 0
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 19.16
+  m_SpotAngle: 174
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.16
+    m_NearPlane: 0.1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!114 &2086333220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086333217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaae0cc55c915514d9b8dbe382b7bc3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 2086333221}
+  trackPlayerMovement: {fileID: 1988410655}
+  light: {fileID: 2086333219}
+  roomlight: {fileID: 300131219}
+--- !u!20 &2086333221
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086333217}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_GateFitMode: 2
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 6.17
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 8400000, guid: 4208b870324dc874993270414b6d8dfe, type: 2}
+  m_TargetDisplay: 2
+  m_TargetEye: 3
+  m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &2090020081
 GameObject:
   m_ObjectHideFlags: 0
