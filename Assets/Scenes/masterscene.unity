@@ -741,12 +741,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ca31e3dc8e552047953b3f394d69b17, type: 3}
---- !u!1 &267168566 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7221936899773803554, guid: ddbdc25eb8cd2944d96fe80594fde009,
-    type: 3}
-  m_PrefabInstance: {fileID: 413881087}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &279076448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1372,16 +1366,6 @@ PrefabInstance:
       propertyPath: takeRoomScreenshot
       value: 
       objectReference: {fileID: 2086333220}
-    - target: {fileID: 5740609129416893069, guid: ddbdc25eb8cd2944d96fe80594fde009,
-        type: 3}
-      propertyPath: realisticcamera
-      value: 
-      objectReference: {fileID: 267168566}
-    - target: {fileID: 5740609129416893069, guid: ddbdc25eb8cd2944d96fe80594fde009,
-        type: 3}
-      propertyPath: simpelcamera
-      value: 
-      objectReference: {fileID: 1512461682}
     - target: {fileID: 9180067146957325540, guid: ddbdc25eb8cd2944d96fe80594fde009,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4075,12 +4059,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1587270750}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1512461682 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5677936906874226229, guid: ddbdc25eb8cd2944d96fe80594fde009,
-    type: 3}
-  m_PrefabInstance: {fileID: 413881087}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1547774253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5176,15 +5154,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 836626576}
     m_Modifications:
+    - target: {fileID: 4915568440010401773, guid: a5f6984d9a4bf1f429c36c443913ea8b,
+        type: 3}
+      propertyPath: takeRoomScreenshot
+      value: 
+      objectReference: {fileID: 2086333220}
     - target: {fileID: 4915568440812720714, guid: a5f6984d9a4bf1f429c36c443913ea8b,
         type: 3}
       propertyPath: m_Name
       value: Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 4915568440812720714, guid: a5f6984d9a4bf1f429c36c443913ea8b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4915568440812817962, guid: a5f6984d9a4bf1f429c36c443913ea8b,
         type: 3}
