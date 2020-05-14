@@ -33,14 +33,16 @@ public class pdf : MonoBehaviour
     {
         this.results = results;
         sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-        date = System.DateTime.Now.ToString("dd-MM-yyyy");
+        date = System.DateTime.Now.ToString("dd-MM-yyyy_hh.mm");
         docname = sceneName + "-" + date;
         pdfDocument pdfDocument = new pdfDocument(docname, "TI-2020");
         Titlepage(pdfDocument);
         addResults(pdfDocument);
 
         DirectoryInfo d = new DirectoryInfo(ScreenshotPath);
-        foreach (var file in d.GetFiles())
+        FileInfo[] files = d.GetFiles();
+        System.Array.Sort(files, (f1, f2) =>f1.CreationTime.CompareTo(f2.CreationTime));
+        foreach (var file in files)
         {
             InsertImage(ScreenshotPath + "/" + file.Name, pdfDocument);
         }
@@ -66,7 +68,7 @@ public class pdf : MonoBehaviour
         int IHeight = IWidht * 9 / 16;
 
         page.addImage(vs, 0, 0, IHeight, IWidht);
-        
+
 
     }
 
@@ -86,13 +88,13 @@ public class pdf : MonoBehaviour
         pdfColor black = new pdfColor(predefinedColor.csBlack);
         pdfColor white = new pdfColor(predefinedColor.csWhite);
         pdfColor grey = new pdfColor(predefinedColor.csLightGray);
-        
+
         foreach (Results result in results)
         {
             pdfPage page = doc.addPage();
             int height = page.height;
 
-            height -= fontsize +20;
+            height -= fontsize + 20;
             page.addText(result.Name, 20, height, predefinedFont.csHelvetica, fontsize);
 
             pdfTable table = new pdfTable();
