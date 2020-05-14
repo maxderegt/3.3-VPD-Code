@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class TrackPlayerMovement : MonoBehaviour
 {
+    [Header("Dont remove")]
+    [Tooltip("A description of Track Player Movement")]
+    [TextArea(2, 5)]
+    public string Description;
 
     List<Vector3> playerPos = new List<Vector3>();
+
+    [Header("Material for the trail")]
+    [Tooltip("This material is used the show the trail of the movement of the player, this is used to generate an image for in the PDF")]
     public Material trail;
 
     // Start is called before the first frame update

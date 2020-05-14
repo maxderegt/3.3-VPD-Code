@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class ResearchChecker : MonoBehaviour
 {
+    [Header("Dont remove")]
+    [Tooltip("A description of Research Checker")]
+    [TextArea(2, 5)]
+    public string Description = "This script wraps up the scene and checks all the Evidence to see what steps were taken and forgotten etc";
+
+    [Tooltip("The script needed to generate the PDF")]
     public pdf pdf;
+
+    [Tooltip("the script needed to take a picture of the player's movement")]
     public TakeRoomScreenshot roomScreenshot;
+
     // Start is called before the first frame update
     void Start()
     {

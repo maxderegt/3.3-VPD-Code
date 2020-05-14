@@ -7,12 +7,31 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class TakeScreenshot : MonoBehaviour
 {
+
+    [Header("Dont remove")]
+    [Tooltip("A description of Take Screenshot")]
+    [TextArea(2, 5)]
+    public string Description;
+
     private AudioSource audioSource;
+
+    [Header("Audio Settings")]
+    [Tooltip("The audio clip that is played when a screenshot is taken")]
     public AudioClip clip;
+
+    [Tooltip("The volume of the clip that is played")]
     public float volume = 0.5f;
+
+    [Tooltip("The Camera feed of which the picture is taken")]
     public Camera camera;
+
+    [Tooltip("The script that creates a picture showing where the picture of the camera is taken")]
     public TakeRoomScreenshot takeRoomScreenshot;
+
+    [Tooltip("The model of big simpel looking camera used in the TakeRoomScreenshot")]
     public GameObject simpelcamera;
+
+    [Tooltip("The model of realistic looking camera used in the game")]
     public GameObject realisticcamera;
 
     private string path = "Screenshot";

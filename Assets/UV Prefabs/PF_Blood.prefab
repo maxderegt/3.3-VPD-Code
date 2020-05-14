@@ -104,3 +104,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cba0c4086f3cf8408e6653d87183d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: This class uses a collider to (de)activate the mesh renderer so it
+    only shows when the correct UV hitbox is used
