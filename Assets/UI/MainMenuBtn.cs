@@ -6,9 +6,9 @@ using UnityEngine;
 public class MainMenuBtn : MonoBehaviour
 {
     public Camera Camera;
-    
+    [Header("dont remove")]
     [TextArea]
-    string description = "this script contains logic an exit button";
+    public string description = "this script contains logic an exit button";
 
     //close application
     public void Exit()
@@ -18,7 +18,6 @@ public class MainMenuBtn : MonoBehaviour
 
     private void Update()
     {
-        int i = DateTime.Now.Second - 30;
-        Camera.transform.Rotate(Mathf.Sin(i), Mathf.Sin(i), 0);
+        //Camera.transform.Rotate(Mathf.Sin(i), Mathf.Sin(i), 0);
     }
 }

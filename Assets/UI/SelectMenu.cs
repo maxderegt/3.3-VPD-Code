@@ -8,8 +8,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class SelectMenu : MonoBehaviour
 {
+    [Header("dont remove")]
     [TextArea]
-    string description = "this script fils the menu with buttons for the different scene's";
+    public string description = "this script fils the menu with buttons for the different scene's";
 
     private AudioSource audioSource;
     [Tooltip("the audio to be played on button click")]
