@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ManualScreenshot : MonoBehaviour
 {
+    [Header("make screenshot as previeuw for the main menu")]
+    [TextArea(2, 5)]
+    public string Description = "this class makes a foto from the players perspective and saves it. The menu uses these foto's as previeuws for the scene";
     string sceneName;
 
     // Start is called before the first frame update
