@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a369a15bbe431744a577ba3814c7a2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: This script cleans up the screenshot folder on startup and starts the
+    exit procedure
   research: {fileID: 915351585}
 --- !u!114 &915351584
 MonoBehaviour:
@@ -59,6 +61,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af721d7cb9dcf0d43ba35529694f5460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  description: this script contains the logic for the creation of a pdf using foto's
+    taken by the player and a list of results
 --- !u!114 &915351585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +75,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 555fe2295759bd745831c27e01f540fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: This script wraps up the scene and checks all the Evidence to see what
+    steps were taken and forgotten etc
   pdf: {fileID: 915351584}
   roomScreenshot: {fileID: 915351586}
 --- !u!114 &915351586
