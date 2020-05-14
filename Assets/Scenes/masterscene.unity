@@ -1303,7 +1303,7 @@ PrefabInstance:
         type: 3}
       propertyPath: takeRoomScreenshot
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1687390592}
     - target: {fileID: 9180067146957325540, guid: ddbdc25eb8cd2944d96fe80594fde009,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4811,6 +4811,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a34cf3f8edbb0740b4dd9b810994528, type: 3}
+--- !u!114 &1687390592 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 915351586, guid: c95f159f05a053c43b64a5a1173caedc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1482984798}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaae0cc55c915514d9b8dbe382b7bc3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1693501476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2554647260668419482, guid: 3a34cf3f8edbb0740b4dd9b810994528,
@@ -5318,7 +5330,7 @@ PrefabInstance:
         type: 3}
       propertyPath: takeRoomScreenshot
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1687390592}
     - target: {fileID: 4915568440812720714, guid: a5f6984d9a4bf1f429c36c443913ea8b,
         type: 3}
       propertyPath: m_Name
