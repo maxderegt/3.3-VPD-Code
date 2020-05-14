@@ -1,4 +1,5 @@
-﻿public enum ResearchMethods
+﻿//public enum class for the Research methods
+public enum ResearchMethods
 {
     DNA = 0,
     Fingerprint = 1,

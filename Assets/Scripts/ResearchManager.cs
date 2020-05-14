@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class ResearchManager : MonoBehaviour
 {
+    [Header("Dont remove")]
+    [Tooltip("A description of Research Manager")]
+    [TextArea(2, 5)]
+    public string Description = "This script keeps track of all the Research Methods that needs to be done with this object and adds methods which have to be done";
 
+    [Tooltip("list of all the steps required")]
     public List<ResearchMethods> StepsRequired;
+
+    [Tooltip("list of all the steps taken")]
     public List<ResearchMethods> StepsTaken;
 
     // Start is called before the first frame update
