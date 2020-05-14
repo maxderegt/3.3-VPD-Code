@@ -41,7 +41,7 @@ public class pdf : MonoBehaviour
 
         DirectoryInfo d = new DirectoryInfo(ScreenshotPath);
         FileInfo[] files = d.GetFiles();
-        System.Array.Sort(files, (f1, f2) =>f1.CreationTime.CompareTo(f2.CreationTime));
+        System.Array.Sort(files, (f1, f2) => f1.CreationTime.CompareTo(f2.CreationTime));
         foreach (var file in files)
         {
             InsertImage(ScreenshotPath + "/" + file.Name, pdfDocument);
@@ -84,7 +84,7 @@ public class pdf : MonoBehaviour
 
     private void addResults(pdfDocument doc)
     {
-        int fontsize = 30;
+        int fontsize = 12;
         pdfColor black = new pdfColor(predefinedColor.csBlack);
         pdfColor white = new pdfColor(predefinedColor.csWhite);
         pdfColor grey = new pdfColor(predefinedColor.csLightGray);
@@ -95,7 +95,10 @@ public class pdf : MonoBehaviour
             int height = page.height;
 
             height -= fontsize + 20;
-            page.addText(result.Name, 20, height, predefinedFont.csHelvetica, fontsize);
+            page.addText(result.Name, 20, height, predefinedFont.csHelveticaBold, fontsize);
+            height -= fontsize + 20;
+            string s = result.AllRequiredSteps ? "ja" : "nee";
+            page.addText("alle benodigede stappen uitgevoerd: " + s, 20, height, predefinedFont.csHelvetica, fontsize);
 
             pdfTable table = new pdfTable();
             table.borderSize = 1;
@@ -106,8 +109,6 @@ public class pdf : MonoBehaviour
 
             table.tableHeader.addColumn(new pdfTableColumn("required steps", predefinedAlignment.csCenter, 200));
             table.tableHeader.addColumn(new pdfTableColumn("steps taken", predefinedAlignment.csCenter, 200));
-
-
 
             if (result.StepsRequired.Count >= result.StepsTaken.Count)
                 for (int i = 0; i < result.StepsRequired.Count; i++)
