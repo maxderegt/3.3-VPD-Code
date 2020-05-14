@@ -107,8 +107,10 @@ public class pdf : MonoBehaviour
             table.rowStyle = new pdfTableRowStyle(predefinedFont.csHelvetica, fontsize, black, white);
             table.alternateRowStyle = new pdfTableRowStyle(predefinedFont.csHelvetica, fontsize, black, grey);
 
-            table.tableHeader.addColumn(new pdfTableColumn("required steps", predefinedAlignment.csCenter, 200));
-            table.tableHeader.addColumn(new pdfTableColumn("steps taken", predefinedAlignment.csCenter, 200));
+            int tableColomnSize = (page.width - 40) / 2;
+
+            table.tableHeader.addColumn(new pdfTableColumn("required steps", predefinedAlignment.csCenter, tableColomnSize));
+            table.tableHeader.addColumn(new pdfTableColumn("steps taken", predefinedAlignment.csCenter, tableColomnSize));
 
             if (result.StepsRequired.Count >= result.StepsTaken.Count)
                 for (int i = 0; i < result.StepsRequired.Count; i++)
