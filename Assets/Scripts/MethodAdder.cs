@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class MethodAdder : MonoBehaviour
 {
@@ -20,55 +21,66 @@ public class MethodAdder : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Y))
         {
-            addDNA();
+            addResearch(ResearchMethods.DNA);
         }
         if (Input.GetKeyDown(KeyCode.U))
         {
-            addFingerprint();
+            addResearch(ResearchMethods.Fingerprint);
         }
         if (Input.GetKeyDown(KeyCode.I))
         {
-            addLabel();
+            addResearch(ResearchMethods.Label);
+        }
+        if (Input.GetKeyDown(KeyCode.Minus))
+        {
+            sendoff();
         }
     }
 
-    public void addDNA()
+    public void addResearch(ResearchMethods method)
     {
+        Hand hand = this.GetComponent<Hand>();
+        var objects = hand.AttachedObjects;
         //searches for child with Research Manager script
-        foreach (Transform child in transform)
+        foreach (var child in objects)
         {
-            ResearchManager sn = child.GetComponent<ResearchManager>();
-            if (sn != null)
+            var attachedobject = child.attachedObject;
+            ResearchManager sn = attachedobject.GetComponent<ResearchManager>();
+            if (sn == null)
             {
-                //adds DNA to it
-                sn.addStep(ResearchMethods.DNA);
+                attachedobject.AddComponent<ResearchManager>();
+                sn = attachedobject.GetComponent<ResearchManager>();
+                sn.StepsRequired = new List<ResearchMethods>();
+                sn.StepsTaken = new List<ResearchMethods>();
             }
+            //adds DNA to it
+            sn.addStep(method);
         }
     }
-    public void addFingerprint()
+    public void sendoff()
     {
+        Hand hand = this.GetComponent<Hand>();
+        var objects = hand.AttachedObjects;
         //searches for child with Research Manager script
-        foreach (Transform child in transform)
+        foreach (var child in objects)
         {
-            ResearchManager sn = child.GetComponent<ResearchManager>();
-            if (sn != null)
+            var attachedobject = child.attachedObject;
+            ResearchManager sn = attachedobject.GetComponent<ResearchManager>();
+            if (sn == null)
             {
-                //adds fingerprint to it
-                sn.addStep(ResearchMethods.Fingerprint);
+                attachedobject.AddComponent<ResearchManager>();
+                sn = attachedobject.GetComponent<ResearchManager>();
+                sn.StepsRequired = new List<ResearchMethods>();
+                sn.StepsTaken = new List<ResearchMethods>();
             }
-        }
-    }
-    public void addLabel()
-    {
-        //searches for child with Research Manager script
-        foreach (Transform child in transform)
-        {
-            ResearchManager sn = child.GetComponent<ResearchManager>();
-            if (sn != null)
+            attachedobject.transform.position = new Vector3(attachedobject.transform.position.x, attachedobject.transform.position.y-20, attachedobject.transform.position.z);
+            Rigidbody rb = attachedobject.GetComponent<Rigidbody>();
+            if(rb != null)
             {
-                //adds label to it
-                sn.addStep(ResearchMethods.Label);
+                rb.useGravity = false;
             }
+            hand.DetachObject(attachedobject,false);
+            attachedobject.transform.parent = null;
         }
     }
 }
