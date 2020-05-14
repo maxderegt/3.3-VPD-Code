@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class quit : MonoBehaviour
 {
+
+    public ResearchChecker research;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +26,8 @@ public class quit : MonoBehaviour
         if (Input.GetKey("escape"))
         {
             Debug.Log("quit game");
-            Application.Quit();
+            research.GenerateEverything();
+            SceneManager.LoadScene("Main menu");
         }
     }
 }
