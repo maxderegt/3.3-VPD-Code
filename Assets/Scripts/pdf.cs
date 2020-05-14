@@ -8,8 +8,9 @@ using UnityEngine;
 
 public class pdf : MonoBehaviour
 {
+    [Header("dont remove")]
     [TextArea]
-    string description = "this script contains the logic for the creation of a pdf using foto's taken by the player and a list of results";
+    public string description = "this script contains the logic for the creation of a pdf using foto's taken by the player and a list of results";
 
     [Tooltip("the results to be displayed in the pdf")]
     public List<Results> results;
@@ -170,7 +171,7 @@ public class pdf : MonoBehaviour
 
             //creating table of required and taken steps
             pdfTable table = new pdfTable();
-            
+
             //defineing table style
             table.borderSize = 1;
             table.borderColor = new pdfColor(predefinedColor.csBlack);
