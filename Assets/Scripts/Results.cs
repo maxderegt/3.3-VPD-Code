@@ -11,21 +11,24 @@ public class Results
     public Results(string name, List<ResearchMethods> stepsRequired, List<ResearchMethods> stepsTaken)
     {
         Name = name;
-
-        foreach (ResearchMethods item in stepsRequired)
-        {
-            StepsRequired.Add(item.ToString());
-        }
-        bool completed = true;
         foreach (ResearchMethods item in stepsTaken)
         {
             StepsTaken.Add(item.ToString());
             if (!stepsRequired.Contains(item))
             {
                 ExtraSteps.Add(item.ToString());
+            }
+        }
+        bool completed = true;
+        foreach (ResearchMethods item in stepsRequired)
+        {
+            StepsRequired.Add(item.ToString());
+            if (!stepsTaken.Contains(item))
+            {
                 completed = false;
             }
         }
+        
         AllRequiredSteps = completed;
     }
 }
