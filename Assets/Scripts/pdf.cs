@@ -165,7 +165,16 @@ public class pdf : MonoBehaviour
             page.addText(result.Name, 20, height, predefinedFont.csHelveticaBold, fontsize);
 
             height -= fontsize + 20;
-            string s = result.AllRequiredSteps ? "ja" : "nee";
+
+            string s;
+
+            if (result.StepsRequired.Count != 0)
+            {
+                s = result.AllRequiredSteps ? "ja" : "nee";
+            }else
+            {
+                s = "is geen bewijsstuk";
+            }
             //add if all requred stepps are taken
             page.addText("alle benodigede stappen uitgevoerd: " + s, 20, height, predefinedFont.csHelvetica, fontsize);
 
