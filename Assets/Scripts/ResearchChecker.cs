@@ -22,6 +22,12 @@ public class ResearchChecker : MonoBehaviour
         }
     }
 
+    public void GenerateEverything()
+    {
+        roomScreenshot.TakeScreenshot(true);
+        pdf.createPdf(CheckAllResearch());
+    }
+
     public List<Results> CheckAllResearch()
     {
         List<Results> results = new List<Results>();
