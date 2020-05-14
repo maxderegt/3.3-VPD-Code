@@ -11,7 +11,12 @@ ModelImporter:
     2300000: beerGlassBroken
     3300000: beerGlassBroken
     4300000: beerGlassBroken
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_shdr
+    second: {fileID: 2100000, guid: 04d0c73e385935e4dbbf81442eb9b524, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
