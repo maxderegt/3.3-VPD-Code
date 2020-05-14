@@ -1207,6 +1207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814a1d0836791bf41baaa216addf90b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: This script keeps track of all the Research Methods that needs to be
+    done with this object and adds methods which have to be done
   StepsRequired: 0000000001000000
   StepsTaken: 0000000001000000
 --- !u!4 &316741296 stripped
@@ -2363,6 +2365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa15190e4fd953d419264b1c0891ec2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: This script adds a research method to it's child objects of the child
+    has a Research Manager script
 --- !u!1001 &762204224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2447,6 +2451,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a991988986227469546f2c10dfeee8, type: 3}
+--- !u!1001 &788764557
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 506106833}
+    m_Modifications:
+    - target: {fileID: 8157267638985171892, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_Name
+      value: PF_Blood
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.053500008
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157267638985171893, guid: 37450f4c93e06e24cb97b6673865488a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 37450f4c93e06e24cb97b6673865488a, type: 3}
 --- !u!1 &798132372
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,6 +2774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814a1d0836791bf41baaa216addf90b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: This script keeps track of all the Research Methods that needs to be
+    done with this object and adds methods which have to be done
   StepsRequired: 000000000100000002000000
   StepsTaken: 0000000001000000
 --- !u!1001 &910355509
@@ -3895,6 +3970,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814a1d0836791bf41baaa216addf90b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: This script keeps track of all the Research Methods that needs to be
+    done with this object and adds methods which have to be done
   StepsRequired: 
   StepsTaken: 00000000
 --- !u!1001 &1252668927
@@ -4869,90 +4946,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a34cf3f8edbb0740b4dd9b810994528, type: 3}
---- !u!1001 &1643185849
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 506106833}
-    m_Modifications:
-    - target: {fileID: 8157267638985171892, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_Name
-      value: PF_Blood
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.011000014
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.053600002
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.008243466
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0053406404
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0035374798
-      objectReference: {fileID: 0}
-    - target: {fileID: 8157267638985171893, guid: 763a9003db3c01243ba0cf3b4efee6e6,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0053406404
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 763a9003db3c01243ba0cf3b4efee6e6, type: 3}
 --- !u!4 &1693501476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2554647260668419482, guid: 3a34cf3f8edbb0740b4dd9b810994528,
@@ -5345,6 +5338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67a5aa6530f921442a6aed120cc5c5bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: 
   trail: {fileID: 2100000, guid: 3783857b41626b4489f830b14ed3c55d, type: 2}
 --- !u!114 &1988410658
 MonoBehaviour:
