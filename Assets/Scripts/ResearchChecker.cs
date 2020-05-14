@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ResearchChecker : MonoBehaviour
 {
+    public pdf pdf;
+    public TakeRoomScreenshot roomScreenshot;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +15,10 @@ public class ResearchChecker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.G))
         {
-            List<Results> results = CheckAllResearch();
+            roomScreenshot.TakeScreenshot(true);
+            pdf.createPdf(CheckAllResearch());
         }
     }
 
@@ -25,9 +28,8 @@ public class ResearchChecker : MonoBehaviour
         var gameobjects = Resources.FindObjectsOfTypeAll<ResearchManager>();
         foreach (ResearchManager item in gameobjects)
         {
-            results.Add(new Results(item.StepsRequired, item.StepsTaken));
+            results.Add(new Results(item.transform.name, item.StepsRequired, item.StepsTaken));
         }
-
         return results;
     }
 }

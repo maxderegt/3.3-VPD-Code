@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -10,7 +11,11 @@ public class TakeScreenshot : MonoBehaviour
     public AudioClip clip;
     public float volume = 0.5f;
     public Camera camera;
+    public TakeRoomScreenshot takeRoomScreenshot;
+    public GameObject simpelcamera;
+    public GameObject realisticcamera;
 
+    private string path = "Screenshot";
 
     // Start is called before the first frame update
     void Start()
@@ -38,17 +43,32 @@ public class TakeScreenshot : MonoBehaviour
             image.ReadPixels(new Rect(0, 0, 1920, 1080), 0, 0);
             image.Apply();
 
-            SaveTextureAsPNG(image, "Screenshot VPD - " + DateTime.Now.ToString("h-mm-ss") + ".png");
+            SaveTextureAsJPG(image, path + "/Screenshot VPD - " + DateTime.Now.ToString("h-mm-ss.fff") + ".jpg");
 
             Debug.Log("Screenshot taken");
+
+            TakeRoomScreenshot();
             
         }
     }
 
-
-    public static void SaveTextureAsPNG(Texture2D _texture, string _fullPath)
+    private void TakeRoomScreenshot()
     {
-        byte[] _bytes = _texture.EncodeToPNG();
-        System.IO.File.WriteAllBytes(_fullPath, _bytes);
+        simpelcamera.SetActive(true);
+        realisticcamera.SetActive(false);
+
+        takeRoomScreenshot.TakeScreenshot(false);
+
+        simpelcamera.SetActive(false);
+        realisticcamera.SetActive(true);
+    }
+
+
+    public void SaveTextureAsJPG(Texture2D _texture, string _fullPath)
+    {
+        if (!Directory.Exists(path))
+            Directory.CreateDirectory(path);
+        byte[] _bytes = _texture.EncodeToJPG();
+        File.WriteAllBytes(_fullPath, _bytes);
     }
 }

@@ -2,27 +2,33 @@
 
 public class Results
 {
+    public string Name;
     public List<string> StepsRequired = new List<string>();
     public List<string> StepsTaken = new List<string>();
     public List<string> ExtraSteps = new List<string>();
     public bool AllRequiredSteps;
 
-    public Results(List<ResearchMethods> stepsRequired, List<ResearchMethods> stepsTaken)
+    public Results(string name, List<ResearchMethods> stepsRequired, List<ResearchMethods> stepsTaken)
     {
-        foreach (ResearchMethods item in stepsRequired)
-        {
-            StepsRequired.Add(item.ToString());
-        }
-        bool completed = true;
+        Name = name;
         foreach (ResearchMethods item in stepsTaken)
         {
             StepsTaken.Add(item.ToString());
             if (!stepsRequired.Contains(item))
             {
                 ExtraSteps.Add(item.ToString());
+            }
+        }
+        bool completed = true;
+        foreach (ResearchMethods item in stepsRequired)
+        {
+            StepsRequired.Add(item.ToString());
+            if (!stepsTaken.Contains(item))
+            {
                 completed = false;
             }
         }
+        
         AllRequiredSteps = completed;
     }
 }
