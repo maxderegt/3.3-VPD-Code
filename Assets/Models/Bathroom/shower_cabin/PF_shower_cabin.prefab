@@ -11272,9 +11272,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6104185846568257469}
-  - component: {fileID: 3566647170266812884}
-  - component: {fileID: 173531647681523347}
-  - component: {fileID: 536759658262825446}
   m_Layer: 0
   m_Name: instance_3
   m_TagString: Untagged
@@ -11297,45 +11294,6 @@ Transform:
   m_Father: {fileID: 6104185846568257457}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3566647170266812884
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6104185846568360925}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 35.43307, y: 35.433052, z: 5.098611}
-  m_Center: {x: -17.716536, y: 17.71653, z: 2.5493054}
---- !u!65 &173531647681523347
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6104185846568360925}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 35.23622, y: 0.15782309, z: 78.74018}
-  m_Center: {x: -17.61811, y: 0.27575442, z: 44.488197}
---- !u!65 &536759658262825446
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6104185846568360925}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.47574842, y: 35.23622, z: 78.74018}
-  m_Center: {x: -34.99852, y: 17.814962, z: 44.488197}
 --- !u!1 &6104185846568360927
 GameObject:
   m_ObjectHideFlags: 0
@@ -11345,6 +11303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6104185846568257471}
+  - component: {fileID: 4536591226612269251}
   m_Layer: 0
   m_Name: PF_shower_cabin
   m_TagString: Untagged
@@ -11367,3 +11326,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
+--- !u!65 &4536591226612269251
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6104185846568360927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 35.43655, y: 35.52065, z: 83.75435}
+  m_Center: {x: -17.218275, y: 17.646332, z: 38.472645}
