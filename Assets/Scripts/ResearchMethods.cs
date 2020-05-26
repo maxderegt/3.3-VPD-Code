@@ -7,5 +7,10 @@ public enum ResearchMethods
     Saliva = 3,
     Shoeprint = 4,
     GunshotResidue = 5,
-    CauseOfDeath = 6
+    CauseOfDeath = 6,
+    KIV = 7,
+    MilieOnderzoek = 8,
+    DrugAnalysis = 9,
+    HandwritingAnalysis = 10,
+    DigitalAnalysis = 11,
 }
