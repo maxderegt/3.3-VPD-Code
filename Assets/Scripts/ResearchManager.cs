@@ -10,7 +10,7 @@ public class ResearchManager : MonoBehaviour
     public string Description = "This script keeps track of all the Research Methods that needs to be done with this object and adds methods which have to be done";
 
     [Tooltip("list of all the steps required")]
-    public List<ResearchMethods> StepsRequired;
+    public List<ResearchMethods> StepsRequired =  new List<ResearchMethods>() { ResearchMethods.Label};
 
     [Tooltip("list of all the steps taken")]
     public List<ResearchMethods> StepsTaken;
@@ -18,7 +18,7 @@ public class ResearchManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
