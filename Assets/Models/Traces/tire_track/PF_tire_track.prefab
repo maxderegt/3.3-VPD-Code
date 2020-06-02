@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3908828947988364791}
   - component: {fileID: 8587182922188793289}
   - component: {fileID: 2395613820149614321}
+  - component: {fileID: 4459947743059000843}
   m_Layer: 0
   m_Name: PF_tire_track
   m_TagString: Untagged
@@ -144,3 +145,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4459947743059000843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4479874885915158270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81a27fd18a29444be92481fe681f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 5950633946213601327}
+  endPosition: {fileID: 5950633946213601327}
+  linearMapping: {fileID: 0}
+  repositionGameObject: 1
+  maintainMomemntum: 1
+  momemtumDampenRate: 5

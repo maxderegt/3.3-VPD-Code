@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 5237068902497908541}
   - component: {fileID: 5237068902497908540}
   - component: {fileID: 3677456445215844999}
+  - component: {fileID: 8294706943448824613}
   m_Layer: 0
   m_Name: PF_Gunshot
   m_TagString: Untagged
@@ -434,3 +435,21 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &8294706943448824613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5237068902497908538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81a27fd18a29444be92481fe681f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 5237068902497908539}
+  endPosition: {fileID: 5237068902497908539}
+  linearMapping: {fileID: 0}
+  repositionGameObject: 1
+  maintainMomemntum: 1
+  momemtumDampenRate: 5

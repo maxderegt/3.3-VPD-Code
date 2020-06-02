@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6167778487555903661}
   - component: {fileID: 3270530697082962888}
   - component: {fileID: 6190319388888407319}
+  - component: {fileID: 2152501330469330488}
   m_Layer: 0
   m_Name: PF_shoeprint_left
   m_TagString: Untagged
@@ -145,6 +146,24 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &2152501330469330488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6167778487558098541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81a27fd18a29444be92481fe681f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 6167778487558328909}
+  endPosition: {fileID: 6167778487558328909}
+  linearMapping: {fileID: 0}
+  repositionGameObject: 1
+  maintainMomemntum: 1
+  momemtumDampenRate: 5
 --- !u!1 &8586278919440049832
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,3 +268,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cba0c4086f3cf8408e6653d87183d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: 

@@ -23,7 +23,7 @@ public class ManualScreenshot : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
-            ScreenCapture.CaptureScreenshot("Assets/Scenes/images/" + sceneName + ".png");
+            ScreenCapture.CaptureScreenshot("Assets/Resources/Textures" + sceneName + ".png");
 
 
             Debug.Log("screenshot");

@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cba0c4086f3cf8408e6653d87183d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: 
 --- !u!1 &4782014354928314525
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +118,7 @@ GameObject:
   - component: {fileID: 4782014354930316893}
   - component: {fileID: 3543663498405295070}
   - component: {fileID: 8543380125986281969}
+  - component: {fileID: 2383944954474273391}
   m_Layer: 0
   m_Name: PF_saliva
   m_TagString: Untagged
@@ -249,3 +251,21 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &2383944954474273391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4782014354928314525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81a27fd18a29444be92481fe681f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 4782014354928547005}
+  endPosition: {fileID: 4782014354928547005}
+  linearMapping: {fileID: 0}
+  repositionGameObject: 1
+  maintainMomemntum: 1
+  momemtumDampenRate: 5

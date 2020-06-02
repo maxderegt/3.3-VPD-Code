@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cba0c4086f3cf8408e6653d87183d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: 
 --- !u!1 &8164649175290324780
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,8 +117,9 @@ GameObject:
   - component: {fileID: 8164649175291427630}
   - component: {fileID: 8164649175292525038}
   - component: {fileID: 8389183276555075554}
+  - component: {fileID: 2162308007597619191}
   m_Layer: 13
-  m_Name: PF_arterial_Bleeding
+  m_Name: PF_arterial_bleeding
   m_TagString: 415nm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -235,3 +237,21 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &2162308007597619191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164649175290324780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81a27fd18a29444be92481fe681f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 8164649175290100492}
+  endPosition: {fileID: 8164649175290100492}
+  linearMapping: {fileID: 0}
+  repositionGameObject: 1
+  maintainMomemntum: 1
+  momemtumDampenRate: 5

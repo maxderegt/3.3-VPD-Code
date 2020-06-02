@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cba0c4086f3cf8408e6653d87183d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: 
 --- !u!1 &8546023545278187449
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +118,7 @@ GameObject:
   - component: {fileID: 8546023545278187455}
   - component: {fileID: 8546023545278187448}
   - component: {fileID: 8546023545278187452}
+  - component: {fileID: 3731361914721535874}
   m_Layer: 0
   m_Name: PF_bloodsplatter_02
   m_TagString: Untagged
@@ -249,3 +251,21 @@ MonoBehaviour:
   highlightOnHover: 1
   hideHighlight: []
   hoverPriority: 0
+--- !u!114 &3731361914721535874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8546023545278187449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81a27fd18a29444be92481fe681f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 8546023545278187453}
+  endPosition: {fileID: 8546023545278187453}
+  linearMapping: {fileID: 0}
+  repositionGameObject: 1
+  maintainMomemntum: 1
+  momemtumDampenRate: 5
