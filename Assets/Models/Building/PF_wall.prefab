@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2554647260668419482}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: PF_wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2554647260668838330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10000, y: 10000, z: 10000}
+  m_LocalScale: {x: 10000.004, y: 10000, z: 10000.004}
   m_Children:
   - {fileID: 2554647260668419486}
   m_Father: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2554647260669713852}
   - component: {fileID: 2554647260670844796}
   - component: {fileID: 3630314590298430944}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

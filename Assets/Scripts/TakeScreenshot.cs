@@ -47,28 +47,32 @@ public class TakeScreenshot : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            audioSource.PlayOneShot(clip, volume);
-           // ScreenCapture.CaptureScreenshot("Screenshot VPD - " + DateTime.Now.ToString("h-mm-ss")+".png");
-
-
-            var currentRT = RenderTexture.active;
-            RenderTexture.active = camera.targetTexture;
-
-            // Render the camera's view.
-            camera.Render();
-
-            // Make a new texture and read the active Render Texture into it.
-            Texture2D image = new Texture2D(1920, 1080);
-            image.ReadPixels(new Rect(0, 0, 1920, 1080), 0, 0);
-            image.Apply();
-
-            SaveTextureAsJPG(image, path + "/Screenshot VPD - " + DateTime.Now.ToString("h-mm-ss.fff") + ".jpg");
-
-            Debug.Log("Screenshot taken");
-
-            TakeRoomScreenshot();
-            
+            takescreenshot();            
         }
+    }
+
+    public void takescreenshot()
+    {
+        audioSource.PlayOneShot(clip, volume);
+        // ScreenCapture.CaptureScreenshot("Screenshot VPD - " + DateTime.Now.ToString("h-mm-ss")+".png");
+
+
+        var currentRT = RenderTexture.active;
+        RenderTexture.active = camera.targetTexture;
+
+        // Render the camera's view.
+        camera.Render();
+
+        // Make a new texture and read the active Render Texture into it.
+        Texture2D image = new Texture2D(1920, 1080);
+        image.ReadPixels(new Rect(0, 0, 1920, 1080), 0, 0);
+        image.Apply();
+
+        SaveTextureAsJPG(image, path + "/Screenshot VPD - " + DateTime.Now.ToString("h-mm-ss.fff") + ".jpg");
+
+        Debug.Log("Screenshot taken");
+
+        TakeRoomScreenshot();
     }
 
     private void TakeRoomScreenshot()
@@ -76,7 +80,8 @@ public class TakeScreenshot : MonoBehaviour
         simpelcamera.SetActive(true);
         realisticcamera.SetActive(false);
 
-        takeRoomScreenshot.TakeScreenshot(false);
+        if(takeRoomScreenshot != null)
+            takeRoomScreenshot.TakeScreenshot(false);
 
         simpelcamera.SetActive(false);
         realisticcamera.SetActive(true);

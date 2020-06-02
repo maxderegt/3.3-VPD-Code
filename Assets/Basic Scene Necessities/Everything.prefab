@@ -135,6 +135,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: '---------------------- SteamVR -------------------------'
       objectReference: {fileID: 0}
+    - target: {fileID: 3608500404507890604, guid: d2b4f78ee85ec444e9618bf9f42d1cd7,
+        type: 3}
+      propertyPath: traceLayerMask.m_Bits
+      value: 49152
+      objectReference: {fileID: 0}
+    - target: {fileID: 9059353940430851823, guid: d2b4f78ee85ec444e9618bf9f42d1cd7,
+        type: 3}
+      propertyPath: takeRoomScreenshot
+      value: 
+      objectReference: {fileID: 2524492355843195836}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2b4f78ee85ec444e9618bf9f42d1cd7, type: 3}
 --- !u!4 &2524492357122496758 stripped
@@ -396,6 +406,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2524492356086279070}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2524492355843195836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 915351586, guid: c95f159f05a053c43b64a5a1173caedc,
+    type: 3}
+  m_PrefabInstance: {fileID: 2524492356086279070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaae0cc55c915514d9b8dbe382b7bc3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6295677170132471190
 PrefabInstance:
   m_ObjectHideFlags: 0
