@@ -51,9 +51,12 @@ public class SelectMenu : MonoBehaviour
             Button b = button.GetComponent<Button>();
 
             var texture = Resources.Load<Texture2D>("Textures/" + allScenes[i]);
-            Sprite sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-
-            b.image.sprite = sprite;
+            if (texture != null)
+            {
+                Sprite sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+                b.image.sprite = sprite;
+            }
+            
             //b.image.sprite = loadImage(new Vector2(1920, 1080), "Assets/Scenes/images/" + allScenes[i] + ".png");
 
             //add listener to the button where it loads the scene and plays a sound
