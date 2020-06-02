@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3913506218221232593}
   - component: {fileID: 5129484667662058175}
   - component: {fileID: 6864005014449544879}
+  - component: {fileID: 4364312465346220847}
   m_Layer: 0
   m_Name: PF_bloodydrop 1
   m_TagString: Untagged
@@ -145,6 +146,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4364312465346220847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270262974125654098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c81a27fd18a29444be92481fe681f4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 260189772897984238}
+  endPosition: {fileID: 260189772897984238}
+  linearMapping: {fileID: 0}
+  repositionGameObject: 1
+  maintainMomemntum: 1
+  momemtumDampenRate: 5
 --- !u!1 &4360302680124058702
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,3 +268,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cba0c4086f3cf8408e6653d87183d6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Description: 
