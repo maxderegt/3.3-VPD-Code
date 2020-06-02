@@ -59,46 +59,71 @@ public class FlashLightController : MonoBehaviour
             //go back through the list
             if (Input.GetKeyDown(KeyCode.K))
             {
-                int previous = SelectedColor;
-                SelectedColor--;
-                if (SelectedColor < 0)
-                    SelectedColor = Colliders.Count - 1;
-                //sets the new color and collider
-                ChangeColliderAndColor(SelectedColor, previous);
+                PreviousNM();
             }
             //go forward through the list
             if (Input.GetKeyDown(KeyCode.L))
             {
-                int previous = SelectedColor;
-                SelectedColor++;
-                if (SelectedColor > Colliders.Count - 1)
-                    SelectedColor = 0;
-                //sets the new color and collider
-                ChangeColliderAndColor(SelectedColor, previous);
+                NextNM();
             }
         }
         //switches the flashlight on or off
         if (Input.GetKeyDown(KeyCode.O))
         {
-            //plays a clicking sound
-            audioSource.PlayOneShot(clip, volume);
-            //on or off
-            LightOn = !LightOn;
-            Spotlight.enabled = LightOn;
-
-            //if light is on than set the displays correctly
-            if (LightOn)
-            {
-                ColorDisplay.color = Colors[SelectedColor];
-                TextDisplay.text = Colliders[SelectedColor].transform.tag;
-            }
-            //if else set the displays to off status
-            else
-            {
-                ColorDisplay.color = Color.black;
-                TextDisplay.text = "off";
-            }
+            PowerOnOff();
         }
+    }
+
+    public void Switchto(int i)
+    {
+        audioSource.PlayOneShot(clip, volume);
+        int previous = SelectedColor;
+        SelectedColor = i;
+        ChangeColliderAndColor(SelectedColor, previous);
+    }
+
+    public void PreviousNM()
+    {
+        audioSource.PlayOneShot(clip, volume);
+        int previous = SelectedColor;
+        SelectedColor--;
+        if (SelectedColor < 0)
+            SelectedColor = Colliders.Count - 1;
+        //sets the new color and collider
+        ChangeColliderAndColor(SelectedColor, previous);
+    }
+
+    public void NextNM()
+    {
+        audioSource.PlayOneShot(clip, volume);
+        int previous = SelectedColor;
+        SelectedColor++;
+        if (SelectedColor > Colliders.Count - 1)
+            SelectedColor = 0;
+        //sets the new color and collider
+        ChangeColliderAndColor(SelectedColor, previous);
+    }
+
+    public void PowerOnOff()
+    {//plays a clicking sound
+        audioSource.PlayOneShot(clip, volume);
+        //on or off
+        LightOn = !LightOn;
+        Spotlight.enabled = LightOn;
+
+        //if light is on than set the displays correctly
+        if (LightOn)
+        {
+            ColorDisplay.color = Colors[SelectedColor];
+            TextDisplay.text = Colliders[SelectedColor].transform.tag;
+        }
+        //if else set the displays to off status
+        else
+        {
+            ColorDisplay.color = Color.black;
+            TextDisplay.text = "off";
+        }
+
     }
 
     private void ChangeColliderAndColor(int current, int previous)
