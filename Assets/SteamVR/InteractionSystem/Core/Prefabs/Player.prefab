@@ -549,6 +549,7 @@ GameObject:
   - component: {fileID: 11450526}
   - component: {fileID: 9215702}
   - component: {fileID: 12440092}
+  - component: {fileID: 9119420665140258285}
   m_Layer: 0
   m_Name: VRCamera
   m_TagString: MainCamera
@@ -608,7 +609,7 @@ Camera:
   m_HDR: 0
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
+  m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -640,6 +641,20 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125964}
   m_Enabled: 1
+--- !u!114 &9119420665140258285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a5aa6530f921442a6aed120cc5c5bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  trail: {fileID: 0}
 --- !u!1 &129006
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +790,7 @@ GameObject:
   - component: {fileID: 458882}
   - component: {fileID: 11497470}
   - component: {fileID: 5492098}
+  - component: {fileID: 2435267214546585652}
   m_Layer: 26
   m_Name: FallbackHand
   m_TagString: Untagged
@@ -864,6 +880,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2435267214546585652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa15190e4fd953d419264b1c0891ec2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: This script adds a research method to it's child objects of the child
+    has a Research Manager script
 --- !u!1 &144230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2914,15 +2944,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddbdc25eb8cd2944d96fe80594fde009, type: 3}
---- !u!4 &9180067147973681374 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9180067146957325540, guid: ddbdc25eb8cd2944d96fe80594fde009,
-    type: 3}
-  m_PrefabInstance: {fileID: 1167352890}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9180067147973655806 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9180067146957822148, guid: ddbdc25eb8cd2944d96fe80594fde009,
+    type: 3}
+  m_PrefabInstance: {fileID: 1167352890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9180067147973681374 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9180067146957325540, guid: ddbdc25eb8cd2944d96fe80594fde009,
     type: 3}
   m_PrefabInstance: {fileID: 1167352890}
   m_PrefabAsset: {fileID: 0}
@@ -3096,6 +3126,12 @@ PrefabInstance:
       objectReference: {fileID: 1182029784}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bcdb6d365f73dd4c94e7e37c5a23e23, type: 3}
+--- !u!4 &7949867570541614868 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687728648787107337, guid: 8bcdb6d365f73dd4c94e7e37c5a23e23,
+    type: 3}
+  m_PrefabInstance: {fileID: 352360589618268445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &7949867570541614867 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7687728648787107342, guid: 8bcdb6d365f73dd4c94e7e37c5a23e23,
@@ -3108,12 +3144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc0d1f81dadf5c1419ff16ca2458f010, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &7949867570541614868 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7687728648787107337, guid: 8bcdb6d365f73dd4c94e7e37c5a23e23,
-    type: 3}
-  m_PrefabInstance: {fileID: 352360589618268445}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &384854971672098630
 PrefabInstance:
   m_ObjectHideFlags: 0
