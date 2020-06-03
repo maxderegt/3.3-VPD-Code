@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ManualScreenshot : MonoBehaviour
+public class MenuFoto: MonoBehaviour
 {
     [Header("make screenshot as previeuw for the main menu")]
     [TextArea(2, 5)]

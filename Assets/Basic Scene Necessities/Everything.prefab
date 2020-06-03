@@ -32,6 +32,20 @@ Transform:
   m_Father: {fileID: 696414267771835139}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8056346663431011517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6321676754290264354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc55fb83c4e9ccf47a3b0406441c21f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: this class makes a foto from the players perspective and saves it.
+    The menu uses these foto's as previeuws for the scene
 --- !u!1 &7806298219963314819
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,9 +197,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1232644429065169191}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2524492356838693859 stripped
+--- !u!114 &6739210967277454482 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3608500403312014020, guid: d2b4f78ee85ec444e9618bf9f42d1cd7,
+  m_CorrespondingSourceObject: {fileID: 5520647027999272373, guid: d2b4f78ee85ec444e9618bf9f42d1cd7,
     type: 3}
   m_PrefabInstance: {fileID: 1232644429065169191}
   m_PrefabAsset: {fileID: 0}
@@ -367,7 +381,7 @@ PrefabInstance:
     - target: {fileID: 915351586, guid: c95f159f05a053c43b64a5a1173caedc, type: 3}
       propertyPath: trackPlayerMovement
       value: 
-      objectReference: {fileID: 2524492356838693859}
+      objectReference: {fileID: 6739210967277454482}
     - target: {fileID: 8409302352991281852, guid: c95f159f05a053c43b64a5a1173caedc,
         type: 3}
       propertyPath: m_Name
@@ -430,6 +444,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c95f159f05a053c43b64a5a1173caedc, type: 3}
+--- !u!1 &6321676754290264354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8409302352991281852, guid: c95f159f05a053c43b64a5a1173caedc,
+    type: 3}
+  m_PrefabInstance: {fileID: 2524492356086279070}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6321676754290264352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8409302352991281854, guid: c95f159f05a053c43b64a5a1173caedc,
@@ -442,7 +462,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2524492356086279070}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 6321676754290264354}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aaae0cc55c915514d9b8dbe382b7bc3a, type: 3}
