@@ -1221,6 +1221,9 @@ MonoBehaviour:
   trigger:
     actionPath: /actions/default/in/GrabPinch
     needsReinit: 0
+  MenuButton:
+    actionPath: /actions/default/in/Menu
+    needsReinit: 0
   ResearchMenu: {fileID: 7949867569895481827}
   ToolsMenu: {fileID: 7949867570331914949}
   MarkersMenu: {fileID: 7949867570541614867}

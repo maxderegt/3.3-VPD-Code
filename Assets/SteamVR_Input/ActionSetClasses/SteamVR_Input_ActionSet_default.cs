@@ -128,5 +128,13 @@ namespace Valve.VR
                 return SteamVR_Actions.default_MenuSelectionPosition;
             }
         }
+        
+        public virtual SteamVR_Action_Boolean Menu
+        {
+            get
+            {
+                return SteamVR_Actions.default_Menu;
+            }
+        }
     }
 }

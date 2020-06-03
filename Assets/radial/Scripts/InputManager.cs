@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEditor;
 using UnityEngine;
 using Valve.VR;
@@ -12,6 +13,7 @@ public class InputManager : MonoBehaviour
     public SteamVR_Action_Boolean press = null;
     public SteamVR_Action_Vector2 touchposition = null;
     public SteamVR_Action_Boolean trigger = null;
+    public SteamVR_Action_Boolean MenuButton = null;
 
     [Header("Scene Objects")]
     public RadialMenu ResearchMenu = null;
@@ -34,6 +36,10 @@ public class InputManager : MonoBehaviour
     private Hand hand;
     private bool playertoolactive = false;
     private GameObject handrenderer;
+
+    private bool quitscene = false;
+    private System.Timers.Timer timer;
+
     private void Awake()
     {
         touch.onChange += Touch;
@@ -41,10 +47,53 @@ public class InputManager : MonoBehaviour
         touchposition.onAxis += Position;
         trigger.onStateDown += Pinch;
         trigger.onStateUp += UnPinch;
+        MenuButton.onStateDown += MenuButton_onStateDown;
+        MenuButton.onStateUp += MenuButton_onStateUp;
+        MenuButton.onUpdate += MenuButton_onUpdate;
+
+        ResetTimer();
 
         Flashlight.transform.parent = GameObject.Find("Everything").transform;
         hand = GetComponent<Hand>();
     }
+
+    private void MenuButton_onUpdate(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool newState)
+    {
+        if (quitscene)
+        {
+            var gamemanager = GameObject.Find("gameManager");
+            quit Quit = gamemanager.GetComponent<quit>();
+            Quit.QuitScene();
+        }
+    }
+
+    private void ResetTimer()
+    {
+        if(timer != null)
+        {
+            timer.Stop();
+            timer.Dispose();
+        }
+        timer = new System.Timers.Timer(1000);
+        timer.Elapsed += Timer_Elapsed;
+        timer.Stop();
+    }
+
+    private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+    {
+        quitscene = true;
+    }
+
+    private void MenuButton_onStateUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
+    {
+        ResetTimer();
+    }
+
+    private void MenuButton_onStateDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
+    {
+        timer.Start();
+    }
+
 
     private void onDestroy()
     {

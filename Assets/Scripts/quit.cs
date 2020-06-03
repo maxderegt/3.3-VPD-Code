@@ -30,9 +30,14 @@ public class quit : MonoBehaviour
     {
         if (Input.GetKey("escape"))
         {
-            Debug.Log("quit game");
-            research.GenerateEverything();
-            SceneManager.LoadScene("Main menu");
+            QuitScene();
         }
+    }
+
+    public void QuitScene()
+    {
+        Debug.Log("quit game");
+        research.GenerateEverything();
+        SceneManager.LoadScene("Main menu");
     }
 }
