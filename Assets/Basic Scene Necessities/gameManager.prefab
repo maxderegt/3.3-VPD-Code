@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 915351584}
   - component: {fileID: 915351585}
   - component: {fileID: 915351586}
+  - component: {fileID: 1701254016985992072}
   m_Layer: 0
   m_Name: gameManager
   m_TagString: Untagged
@@ -96,3 +97,17 @@ MonoBehaviour:
   trackPlayerMovement: {fileID: 0}
   light: {fileID: 0}
   roomlight: {fileID: 0}
+--- !u!114 &1701254016985992072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8409302352991281852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc55fb83c4e9ccf47a3b0406441c21f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: this class makes a foto from the players perspective and saves it.
+    The menu uses these foto's as previeuws for the scene

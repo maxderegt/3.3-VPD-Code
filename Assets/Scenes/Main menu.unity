@@ -2659,6 +2659,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 631315174}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &634532167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4076955353664852569, guid: 5f7bcb4eddcfaee45a272f3ad81fce73,
+    type: 3}
+  m_PrefabInstance: {fileID: 1837612412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &634532174
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634532167}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &638622481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2990,7 +3012,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825590335}
-  m_LocalRotation: {x: 0.074815586, y: 0.91547674, z: -0.20128055, w: 0.34028092}
+  m_LocalRotation: {x: 0.0748156, y: 0.91547674, z: -0.20128058, w: 0.34028092}
   m_LocalPosition: {x: 1.9657428, y: 1.7477738, z: -2.2566082}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -3009,7 +3031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 947b39ae9bedfe54e865e20b859ee025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Camera: {fileID: 825590337}
+  Camera: {fileID: 825590335}
 --- !u!1 &836228505
 GameObject:
   m_ObjectHideFlags: 0
@@ -5650,6 +5672,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1485271515}
   m_CullTransparentMesh: 0
+--- !u!1 &1533850616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8409302352991281852, guid: c95f159f05a053c43b64a5a1173caedc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1322046847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1533850617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533850616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc55fb83c4e9ccf47a3b0406441c21f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: this class makes a foto from the players perspective and saves it.
+    The menu uses these foto's as previeuws for the scene
+  sceneName: 
 --- !u!1001 &1545274277
 PrefabInstance:
   m_ObjectHideFlags: 0
