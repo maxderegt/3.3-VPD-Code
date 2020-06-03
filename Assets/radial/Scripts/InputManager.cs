@@ -42,7 +42,7 @@ public class InputManager : MonoBehaviour
         trigger.onStateDown += Pinch;
         trigger.onStateUp += UnPinch;
 
-        Flashlight.transform.parent = null;
+        Flashlight.transform.parent = GameObject.Find("Everything").transform;
         hand = GetComponent<Hand>();
     }
 
