@@ -1023,6 +1023,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3943c77df1ea3e4449d8bf1ee4f9c712, type: 3}
+--- !u!1 &1448968106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8409302352991281852, guid: c95f159f05a053c43b64a5a1173caedc,
+    type: 3}
+  m_PrefabInstance: {fileID: 196971874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1448968107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448968106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc55fb83c4e9ccf47a3b0406441c21f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: this class makes a foto from the players perspective and saves it.
+    The menu uses these foto's as previeuws for the scene
 --- !u!1001 &1542238378
 PrefabInstance:
   m_ObjectHideFlags: 0
