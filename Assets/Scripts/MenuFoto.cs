@@ -23,7 +23,7 @@ public class MenuFoto: MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
 
-            ScreenCapture.CaptureScreenshot("Assets/Resources/Textures" + sceneName + ".png");
+            ScreenCapture.CaptureScreenshot("Assets/Resources/Textures/" + sceneName + ".png");
 
 
             Debug.Log("screenshot");
