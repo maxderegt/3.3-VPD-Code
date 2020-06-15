@@ -1059,7 +1059,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1849108576}
+    m_TransformParent: {fileID: 1151613034}
     m_Modifications:
     - target: {fileID: 5237068902497908538, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
@@ -1069,17 +1069,17 @@ PrefabInstance:
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.2229
+      value: -0.0017035791
       objectReference: {fileID: 0}
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.448435
+      value: 0.0024712943
       objectReference: {fileID: 0}
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.252145
+      value: -0.005835057
       objectReference: {fileID: 0}
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
@@ -1089,7 +1089,7 @@ PrefabInstance:
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7926569
+      value: -0.01957655
       objectReference: {fileID: 0}
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
@@ -1099,12 +1099,12 @@ PrefabInstance:
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.609668
+      value: 0.99980843
       objectReference: {fileID: 0}
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
@@ -1124,14 +1124,21 @@ PrefabInstance:
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0060000024
+      value: 0.00012000008
       objectReference: {fileID: 0}
     - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0060000024
+      value: 0.00012000008
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.00012
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8294706943448824613, guid: 2acc13f010b22f9448ec12446b86cfc0, type: 3}
+    - {fileID: 3677456445215844999, guid: 2acc13f010b22f9448ec12446b86cfc0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2acc13f010b22f9448ec12446b86cfc0, type: 3}
 --- !u!4 &265765993 stripped
 Transform:
@@ -3162,34 +3169,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fde8c85314456444ebf8a3e52c74c818, type: 3}
---- !u!1 &912513370 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5237068902497908538, guid: 2acc13f010b22f9448ec12446b86cfc0,
-    type: 3}
-  m_PrefabInstance: {fileID: 256028392}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &912513375 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5237068902497908539, guid: 2acc13f010b22f9448ec12446b86cfc0,
-    type: 3}
-  m_PrefabInstance: {fileID: 256028392}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &912513376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912513370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 814a1d0836791bf41baaa216addf90b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Description: This script keeps track of all the Research Methods that needs to be
-    done with this object and adds methods which have to be done
-  StepsRequired: 020000000000000005000000
-  StepsTaken: 
 --- !u!1001 &925729850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3582,7 +3561,7 @@ PrefabInstance:
     - target: {fileID: 4720529534682549377, guid: 8d3988b5060482d47a17ffbf90f0d125,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4720529534682549377, guid: 8d3988b5060482d47a17ffbf90f0d125,
         type: 3}
@@ -3598,6 +3577,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552627346135402830, guid: 8d3988b5060482d47a17ffbf90f0d125,
+        type: 3}
+      propertyPath: StepsRequired.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552627346135402830, guid: 8d3988b5060482d47a17ffbf90f0d125,
+        type: 3}
+      propertyPath: StepsRequired.Array.data[2]
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d3988b5060482d47a17ffbf90f0d125, type: 3}
@@ -4451,7 +4440,7 @@ PrefabInstance:
     - target: {fileID: 275348572365966502, guid: 85aa62c3cc9140f48b099199003105da,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.719
+      value: 4.79
       objectReference: {fileID: 0}
     - target: {fileID: 275348572365966502, guid: 85aa62c3cc9140f48b099199003105da,
         type: 3}
@@ -5358,7 +5347,6 @@ Transform:
   - {fileID: 1923252244}
   - {fileID: 1093222617}
   - {fileID: 679824055}
-  - {fileID: 912513375}
   - {fileID: 1151613034}
   m_Father: {fileID: 1567447118}
   m_RootOrder: 6
@@ -5696,7 +5684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Description: This script keeps track of all the Research Methods that needs to be
     done with this object and adds methods which have to be done
-  StepsRequired: 0200000004000000
+  StepsRequired: 020000000400000000000000
   StepsTaken: 
 --- !u!4 &1944039862 stripped
 Transform:
