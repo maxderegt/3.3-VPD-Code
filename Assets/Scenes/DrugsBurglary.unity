@@ -2353,7 +2353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048454259}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -56.037876, y: 28.02204, z: 6.14}
+  m_LocalPosition: {x: -58.577, y: 28.02204, z: 6.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 33562782}
@@ -2388,7 +2388,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 49463
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
@@ -2563,6 +2563,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 11.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524492356190209384, guid: 0c21b0fbd7c4ead4c9d6a40aa50744b2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -58.576
       objectReference: {fileID: 0}
     - target: {fileID: 7806298219963314819, guid: 0c21b0fbd7c4ead4c9d6a40aa50744b2,
         type: 3}
