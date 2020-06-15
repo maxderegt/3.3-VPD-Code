@@ -43,8 +43,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 40.700768, y: 47.07768, z: 55.851646}
-  m_Center: {x: -0.102849774, y: 0.20574929, z: 30.333708}
+  m_Size: {x: 40.700768, y: 47.07768, z: 74.830185}
+  m_Center: {x: -0.102849774, y: 0.20574929, z: 39.822945}
 --- !u!54 &1034291915112649007
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -576,8 +576,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 40.700768, y: 47.07768, z: 55.851646}
-  m_Center: {x: -0.102849774, y: 0.20574929, z: 30.333708}
+  m_Size: {x: 40.700768, y: 47.07768, z: 74.830185}
+  m_Center: {x: -0.102849774, y: 0.20574929, z: 39.822945}
 --- !u!54 &6095192939989374963
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -637,8 +637,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 40.700768, y: 47.07768, z: 55.851646}
-  m_Center: {x: -0.102849774, y: 0.20574929, z: 30.333708}
+  m_Size: {x: 40.700768, y: 47.07768, z: 74.830185}
+  m_Center: {x: -0.102849774, y: 0.20574929, z: 39.822945}
 --- !u!54 &4493253101276292132
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -698,8 +698,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 40.700768, y: 47.07768, z: 55.851646}
-  m_Center: {x: -0.102849774, y: 0.20574929, z: 30.333708}
+  m_Size: {x: 40.700768, y: 47.07768, z: 74.83018}
+  m_Center: {x: -0.102849774, y: 0.20574929, z: 39.82294}
 --- !u!54 &3883582592015068682
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -874,7 +874,7 @@ PrefabInstance:
     - target: {fileID: 1822517503588239096, guid: daff43fe0f5a71b4e8a80295e5c7ac61,
         type: 3}
       propertyPath: m_Intensity
-      value: 0.97
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1822517503588239096, guid: daff43fe0f5a71b4e8a80295e5c7ac61,
         type: 3}
@@ -900,6 +900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822517503588239096, guid: daff43fe0f5a71b4e8a80295e5c7ac61,
+        type: 3}
+      propertyPath: m_Range
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1822517503588239097, guid: daff43fe0f5a71b4e8a80295e5c7ac61,
         type: 3}
