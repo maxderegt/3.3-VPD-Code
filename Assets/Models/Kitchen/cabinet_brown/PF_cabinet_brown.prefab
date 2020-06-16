@@ -101,17 +101,17 @@ MonoBehaviour:
   childCollider: {fileID: 0}
   linearMapping: {fileID: 0}
   hoverLock: 1
-  limited: 0
+  limited: 1
   frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
   onFrozenDistanceThreshold:
     m_PersistentCalls:
       m_Calls: []
-  minAngle: 0
+  minAngle: -90
   freezeOnMin: 0
   onMinAngle:
     m_PersistentCalls:
       m_Calls: []
-  maxAngle: 180
+  maxAngle: 0
   freezeOnMax: 0
   onMaxAngle:
     m_PersistentCalls:
@@ -4054,7 +4054,7 @@ MonoBehaviour:
   childCollider: {fileID: 0}
   linearMapping: {fileID: 0}
   hoverLock: 1
-  limited: 0
+  limited: 1
   frozenDistanceMinMaxThreshold: {x: 0.1, y: 0.2}
   onFrozenDistanceThreshold:
     m_PersistentCalls:
@@ -4064,7 +4064,7 @@ MonoBehaviour:
   onMinAngle:
     m_PersistentCalls:
       m_Calls: []
-  maxAngle: 180
+  maxAngle: 90
   freezeOnMax: 0
   onMaxAngle:
     m_PersistentCalls:
