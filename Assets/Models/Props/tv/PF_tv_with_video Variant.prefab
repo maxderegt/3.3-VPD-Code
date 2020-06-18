@@ -125,7 +125,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -219,7 +219,7 @@ PrefabInstance:
     - target: {fileID: 8570991497840699346, guid: 3f0a7887bb1f5ef46bbc43587f862697,
         type: 3}
       propertyPath: m_Name
-      value: PF_tv_with_video
+      value: PF_tv_with_video Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8570991497841195954, guid: 3f0a7887bb1f5ef46bbc43587f862697,
         type: 3}
